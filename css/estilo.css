@@ -1,0 +1,495 @@
+@font-face {
+        font-family: "Brandon";
+        src: url("../fonts/BrandonGrotesque-Medium.ttf");
+    }*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: "Brandon";
+}
+nav{
+    display: flex;
+    justify-content:space-between ;
+    padding: 33px 180px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    
+}
+.menu{
+    font-size: 15px;
+
+}
+.menu .item{
+    position: relative;
+}
+.menu a{
+    font-family: "Brandon";
+    text-decoration: none;
+    color: #1d1d1d;
+  margin:  0px 14px;
+  padding: 2px 0px;
+
+
+}
+.burguer{
+    display: none;
+}
+.menu .mini{
+    position: absolute;
+    background-color:#1d1d1d ;
+   
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 15px;
+    padding: 15px;
+    letter-spacing: 2px;
+    left: 0px;
+    display: none;
+}
+.item:hover .mini{
+    position: absolute;
+    background-color:#1d1d1d ;
+   
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 15px;
+    padding: 15px;
+    letter-spacing: 2px;
+    left: 0px;
+}
+.item>a:hover{
+    color: rgba(29,29,29,.4);
+}
+.mini a:hover{
+    color: rgba(180, 179, 179, 0.4);
+}
+.mini a{
+    color: white;
+   white-space: nowrap;
+    padding: 2px;
+}
+.imagen{
+   width: 100%;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1641853527270-1QV7RWMNNZ99J5DFB722/r315_34a_pub.pub16.356.jpg?format=2500w");
+    background-size: cover;
+    padding: 150px 142px;
+    background-position:center ;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.imagen .red{
+    text-align: right;
+    position: relative;
+}
+.imagen .red img{
+    width: 40%;
+    z-index: 5;
+}
+
+.dibujos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 142px;
+
+}
+.pixar{
+    width: 33.3%;
+    padding: 40px;
+    position: relative;
+
+    
+}
+.pixar .toy{
+  height: 100%;
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    perspective: 1000px;
+   
+
+}
+.pixar .titulo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transform-origin: center;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    background-color: rgb(157, 230, 243);
+    
+    
+}
+.pixar .toy:hover .primero{
+transform: rotateY(180deg);
+}
+.pixar .toy:hover .segundo{
+transform: rotateY(180deg);
+}
+.pixar .toy:hover .tercero{
+transform: rotateY(180deg);
+}
+.pixar .toy:hover .titulo{
+    transform: rotateY(0);
+ }
+
+.pixar h3{ color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px;
+}
+
+.primero{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1489515186655-LQ8Q6L0MFGETKRSTD0UW/image-asset.jpeg?format=1500w);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+ .segundo{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/a81f08ab-8ee5-44fc-93ad-cbc229c18a4b/lightyear.jpg?format=1500w);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+.tercero{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/08a05faa-7897-4720-ab64-d14a13b51663/alberto.jpg?format=1500w);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+.redes a{
+    color: #1d1d1d;
+    padding: 20px;
+}
+.redes a:hover{
+    color: rgba(28,28,28,.69)
+}
+.fin p{
+    font-size: 16px;
+    color:#1d1d1d ;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.fin p a{
+    color: #1d1d1d;
+}
+.fin span{
+  display: inline-block;
+    font-size: 15px;
+    color: #1d1d1d ;
+    margin: 20px;
+    background-color: rgb(195, 194, 194);
+}
+.furgo{
+    padding: 180px 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700Px;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1547160784535-NRTE397X9HC0V0PM8BYU/ctoons_head.jpg?format=2500w);
+}
+.furgo h1{
+    color: white;
+    letter-spacing: 15px;
+    font-size: 51px;
+}
+.capitulos{
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 142px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.capitulos .pixar{
+   margin: 0%;
+    width: 25%;
+    
+}
+.capitulos .pixar .toy{
+    display: flex;
+    align-items: center;
+    aspect-ratio: 2/3;
+    
+    
+    margin: 0%;
+}  
+
+.capitulos .pixar h3{
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 0px;
+    
+    margin: 0%;
+}
+.uno{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974488-3JBB8CFN0G54HTQG4HVS/time.jpg?format=300w);
+}
+.dos{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044973926-V8D3EVAXY6AH2FYP8FZO/air.jpg?format=300w);
+}
+.tres{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974286-L9KT93CKHBKJWP67137E/privateeye.jpg?format=300w);
+}
+.cuatro{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974267-HYYG7IVRUWQEQ3XFU6I7/moon.jpg?format=300w);
+}
+.cinco{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974045-47LRZ1AZS3NLNGHSQUL5/heavy.jpg?format=300w);
+}
+.seis{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974183-Y4M99KC8L58KFIZV7PVW/monster.jpg?format=300w);
+}
+.siete{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974535-WBWC1O80PANJXUTDKWQ6/tokyo.jpg?format=300w);
+}
+.ocho{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974608-OJABWXKS10JK19MKRU94/ufm.jpg?format=300w);
+}
+.nueve{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974107-6B1VK31IQN1ER8CE2I4J/materdor.jpg?format=300w);
+}
+.diez{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044973970-1YBCQ548BR439V3OEJMP/greater.jpg?format=300w);
+}
+.once{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974386-MBC9SQA66DZE3J67O21Z/rescue.jpg?format=300w);
+}
+.doce{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1474044974419-K7NRM39OHTO8MXXJ50XD/tales.jpg?format=300w);
+}
+ hr{
+    
+    width: 20%;
+    color:rgb(195, 194, 194);
+     margin: 30px auto;
+     font-size: 1px;
+    
+    }
+.time{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 142px;
+width: 100%;
+}
+.time .dibu img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    padding: 5px 35px 60px 0px;
+    
+}
+.time .dibu{
+width: 50%;
+
+}
+.time .texto{
+    width: 50%;
+    padding: 35px;
+}
+.time .texto h2{
+    font-size: 39px;
+    
+    margin-top: 0px;
+    color: #2b2b2b;
+}
+.time .texto h4{
+    font-size: 30px;
+    color: #2b2b2b;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 30px 0px;
+}
+.time .texto p{
+    font-size: 22px;
+     color: #2b2b2b;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:768px) {
+
+nav{
+    padding: 15px;
+}
+nav .menu{
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    padding: 20px 15px;
+    background-color: white;
+    top: 57px;
+    display: flex;
+    flex-direction: column;
+    
+    transition: all;
+    left: -100%;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.menu.abierto{
+    transition: all;
+    left: 0px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   
+}
+.menu .item{
+    margin-bottom: 30px;
+}
+.imagen{
+    padding: 30PX;
+    
+}
+.imagen .red img{
+    width: 100%;   
+    padding-top: 60px;
+    padding-left: 56px
+
+
+}
+
+
+
+.dibujos{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+ .dibujos .pixar{
+
+    width: 100%;
+    padding: 15px;
+}
+
+.capitulos{
+    padding: 20px;
+}
+.capitulos .pixar{
+width: 50%;
+padding: 25px;
+}
+.time{
+    padding: 25px;
+    display: flex;
+   flex-direction: column;
+}
+.time .dibu img{
+    padding-bottom: 10px;
+}
+
+.time .texto{
+    width: 100%;
+}
+.burguer{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+
+}
+@media(min-width: 769px) and (max-width: 1024px){
+nav{
+    padding: 15px;
+}
+
+    nav .menu{
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        transition: all;
+        transform-origin: left;
+         transition-duration: 0.5s;
+        transition-timing-function: linear;
+        background-color: white;
+        top: 57px;
+        left: -100%;
+}
+    .menu.abierto{
+    transition: all;
+    left: 0px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+   
+}
+.menu .item{
+    margin-bottom: 30px;
+}
+.burguer{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+.imagen .red img{
+    width: 90%;
+}
+.capitulos{
+    padding: 20px;
+}
+.dibujos {
+    padding: 35px;
+}
+
+.pixar{
+    padding: 40px;
+}
+.time{
+    
+padding: 25px;
+  
+}
+.time .dibu img{
+    padding: 0px;
+}
+
+}
+
+
+
+
+
+
+    
+
+
+
+
